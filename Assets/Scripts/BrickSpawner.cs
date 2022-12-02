@@ -13,9 +13,20 @@ public class BrickSpawner : MonoBehaviour
     
     private void Start()
     {
+        SetupExistingBricksInScene();
         SpawnBricks();
     }
 
+    private void SetupExistingBricksInScene()
+    {
+        Brick[] existingBricks = FindObjectsOfType<Brick>();
+        for (int i = 0; i < existingBricks.Length; i++)
+        {
+            existingBricks[i].SetSpawner(this);
+            existingBricks[i].transform.SetParent(transform);
+        }
+    }
+    
     private void SpawnBricks()
     {
         Vector3 offset = Vector3.zero;
@@ -25,9 +36,7 @@ public class BrickSpawner : MonoBehaviour
             for (int x = 0; x < xAmount; x++)
             {
                 Brick newBrick = Instantiate(brickPrefab, transform.position + offset, Quaternion.identity);
-                
                 newBrick.SetSpawner(this);
-                
                 newBrick.transform.SetParent(transform);
                 
                 offset += Vector3.right * xMargin;

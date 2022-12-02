@@ -937,6 +937,71 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1001 &1583199567
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 543091957843849186, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 543091957843849186, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 543091957843849186, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 543091957843849186, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 543091957843849186, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543091957843849186, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 543091957843849186, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 543091957843849186, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 543091957843849186, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 543091957843849186, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 543091957843849186, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1069102664846284571, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
+      propertyPath: xAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1069102664846284571, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
+      propertyPath: yAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8582839566884700573, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
+      propertyPath: m_Name
+      value: BrickSpawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 384109ddc24ac73439d0d12758cafbfd, type: 3}
 --- !u!1001 &1708423473
 PrefabInstance:
   m_ObjectHideFlags: 0
