@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Ball : MonoBehaviour
@@ -9,6 +10,38 @@ public class Ball : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void OnEnable()
+    {
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnDisable()
+    {
+        GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+    }
+
+    private void OnGameStateChanged(GameStateManager.GameState targetstate)
+    {
+        switch (targetstate)
+        {
+            case GameStateManager.GameState.ready:
+                
+                break;
+            
+            case GameStateManager.GameState.playing:
+                
+                break;
+            
+            case GameStateManager.GameState.win:
+                break;
+            
+            case GameStateManager.GameState.lose:
+                break;
+            
+            default: break;
+        }
     }
 
     private void Start()
