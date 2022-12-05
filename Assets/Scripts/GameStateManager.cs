@@ -6,7 +6,7 @@ public class GameStateManager : MonoBehaviour
     public static GameStateManager Instance;
     
     public delegate void GameStateChangeDelegate(GameState targetState);
-    public event GameStateChangeDelegate OnGameStateChanged; 
+    public static event GameStateChangeDelegate OnGameStateChanged; 
     
     public enum GameState
     {

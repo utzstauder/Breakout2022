@@ -14,12 +14,12 @@ public class Ball : MonoBehaviour
 
     private void OnEnable()
     {
-        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+        GameStateManager.OnGameStateChanged += OnGameStateChanged;
     }
 
     private void OnDisable()
     {
-        GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+        GameStateManager.OnGameStateChanged -= OnGameStateChanged;
     }
 
     private void OnGameStateChanged(GameStateManager.GameState targetstate)
