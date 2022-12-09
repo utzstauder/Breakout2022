@@ -7,6 +7,9 @@ public class Ball : MonoBehaviour
     
     private Rigidbody2D rb;
 
+    public delegate void BallCollisionDelegate(Vector2 collisionPoint);
+    public event BallCollisionDelegate OnBallCollision;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -69,6 +72,8 @@ public class Ball : MonoBehaviour
 
             rb.velocity = newDirection * rb.velocity.magnitude;
         }
+
+        OnBallCollision?.Invoke(col.GetContact(0).point);
     }
 
     private void ResetBall()
